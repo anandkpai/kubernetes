@@ -1,0 +1,4 @@
+tls:
+  - hosts:
+      - nginx.localtest.me
+    secretName: nginx-tls
