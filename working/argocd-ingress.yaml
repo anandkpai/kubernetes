@@ -1,4 +1,0 @@
-tls:
-  - hosts:
-      - argocd.localtest.me
-    secretName: argocd-tls
