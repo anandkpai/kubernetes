@@ -227,6 +227,7 @@ Generate a login token:
 ```bash
 kubectl -n kubernetes-dashboard create token admin-user
 ```
+or run the script under kubernetes-dashboard/scripts
 
 Paste the token into the login form at:
 
