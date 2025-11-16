@@ -1,1 +1,11 @@
-kubectl -n default create secret tls nginx-demo-tls   --cert=../certs/wildcard.localtest.me.pem   --key=../certs/wildcard.localtest.me-key.pem
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+"${SCRIPT_DIR}/create-tls-secret.sh" \
+  --namespace default \
+  --secret-name nginx-demo-tls \
+  --cert "${SCRIPT_DIR}/../certs/wildcard.localtest.me.pem" \
+  --key  "${SCRIPT_DIR}/../certs/wildcard.localtest.me-key.pem" \
+   "$@"
