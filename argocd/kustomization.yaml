@@ -10,9 +10,4 @@ resources:
   - argocd-root.yaml
   - argocd-ingress.yaml
 
-secretGenerator:
-  - name: argocd-tls
-    type: "kubernetes.io/tls"
-    files:
-      - tls.crt=certs/wildcard.localtest.me.pem
-      - tls.key=certs/wildcard.localtest.me-key.pem
+
