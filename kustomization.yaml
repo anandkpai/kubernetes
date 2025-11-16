@@ -4,4 +4,4 @@ kind: Kustomization
 resources:
   - argocd
   - kubernetes-dashboard
-  - nginx
+  - nginx-demo
