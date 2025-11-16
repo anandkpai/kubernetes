@@ -10,7 +10,8 @@ spec:
     targetRevision: main
     path: apps
     directory:
-      recurse: true      
+      recurse: false
+      include: "*-app.yaml"      
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
