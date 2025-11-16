@@ -1,0 +1,1 @@
+kubectl create secret tls dagster-tls   --cert=wildcard.localtest.me.pem   --key=wildcard.localtest.me-key.pem   -n dagster

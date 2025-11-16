@@ -6,7 +6,7 @@ set -euo pipefail
 # -------------------------------
 NAMESPACE="argocd"
 SECRET_NAME="argocd-tls"
-CERT_DIR="certs"
+CERT_DIR="../certs"
 CERT_FILE="${CERT_DIR}/wildcard.localtest.me.pem"
 KEY_FILE="${CERT_DIR}/wildcard.localtest.me-key.pem"
 
