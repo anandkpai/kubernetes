@@ -16,5 +16,5 @@ secretGenerator:
   - name: nginx-tls
     type: "kubernetes.io/tls"
     files:
-      - tls.crt=../certs/wildcard.localtest.me.pem
-      - tls.key=../certs/wildcard.localtest.me-key.pem
+      - tls.crt=certs/wildcard.localtest.me.pem
+      - tls.key=certs/wildcard.localtest.me-key.pem
