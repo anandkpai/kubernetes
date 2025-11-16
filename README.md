@@ -284,10 +284,10 @@ To fully reset / recreate your environment:
 ```bash
 kind delete cluster --name kind
 
-./install-kind.sh
-./install-nginx.sh
-./install-agocd.sh
-./install-kubernetes-dashboard.sh
+./scripts/install-kind.sh
+./scrtips/install-nginx.sh
+./scrtips/install-agocd.sh
+./scrtips/install-kubernetes-dashboard.sh
 kubectl apply -k .
 ```
 
