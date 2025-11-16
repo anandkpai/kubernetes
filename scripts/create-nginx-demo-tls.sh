@@ -1,1 +1,1 @@
-kubectl -n default create secret tls nginx-demo-tls   --cert=./wildcard.localtest.me.pem   --key=./wildcard.localtest.me-key.pem
+kubectl -n default create secret tls nginx-demo-tls   --cert=../certs/wildcard.localtest.me.pem   --key=../certs/wildcard.localtest.me-key.pem
