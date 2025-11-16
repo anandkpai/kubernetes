@@ -3,7 +3,7 @@ kind: Kustomization
 
 # if everything for nginx is in default namespace, omit namespace
 # or set namespace: default explicitly if you prefer
-# namespace: default
+namespace: default
 
 generatorOptions:
   disableNameSuffixHash: true
