@@ -314,6 +314,8 @@ ArgoCD will then manage the apps from the **`argocd-platform`** repo:
 - `kubernetes-dashboard` (`kubernetes-dashboard-app.yaml`)
 - `dagster` (`dagster-app.yaml`)
 
+Note that the dagster app is currently configured to run to a postgres database that is running inside the wsl and listening to all hosts with zero security.  You should either run this local postgres db or modify this for your set up. 
+
 You can inspect in ArgoCD UI (`https://argocd.localtest.me`) or via CLI:
 
 ```bash
