@@ -37,11 +37,8 @@ cd scripts
 ./create-argocd-tls-secret.sh
 ./create-nginx-demo-tls.sh
 ./create-dashboard-tls-secret.sh
+./create-dagster-tls.sh
 
-# Dagster TLS (expects cert/key in current directory)
-cd ../certs
-../scripts/create-dagster-tls.sh
-```
 
 After this:
 
@@ -86,13 +83,11 @@ kubernetes/
 │   ├── install-kind.sh
 │   ├── install-nginx.sh
 │   ├── install-agocd.sh
-│   ├── install-kubernetes-dashboard.sh
 │   ├── create-argocd-tls-secret.sh
 │   ├── create-nginx-demo-tls.sh
 │   ├── create-dashboard-tls-secret.sh
 │   ├── create-dagster-tls.sh
-│   ├── tls-info-or-create.sh
-│   └── decode-secret.sh
+│   └── decode-secret.sh                # helper function
 └── README.md                           # This file
 ```
 
